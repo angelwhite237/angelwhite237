@@ -1,0 +1,48 @@
+body{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+form{
+    background: #ff0055;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto
+    box-sizing: border-box;
+}
+
+input, select, button {
+  width: 98%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .radio-group {
+    flex-direction: column;
+    gap: 10px
+    height: 50px;
+  }
+  input,select,button{
+    width: 98%;
+    padding: 10px;
+    margin: 8px;
+    border: 1px;
+    border-radius: 4px;
+    box-sizing: border-box;
+   }
+  button{
+    cursor: pointer;
+  }
+  button[type="reset"]{
+    background-color: white;
+    color: black;
+  }
+  button[type="submit"]{
+    background-color: antiquewhite;
+    color: black;
+}
+  .btn-group{
+    display: flex;
+    gap: 10px;
+  }
+}

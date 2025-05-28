@@ -1,0 +1,52 @@
+/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon formulaire d'inscription</title>
+    <link rel="stylesheet"href="form.css">
+</head>
+<body>
+    <form action="traitement.php" method="post">
+        <marquee><h1> REMPLISSEZ VOTRE FOMULAIRE</h1></marquee>
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="Nom" required>
+        <label for="prenom">Prenom:</label>
+        <input type="text" id="prenom" name="Prenom" required>
+        <span>SEXE:</span>
+        <div class="radio-group">
+            <label for="feminin">FEMININ</label>
+            <input type="radio" id="feminin" name="sexe"required>
+            <label for="masculin">MASCULIN</label>
+            <input type="radio" id="masculin" name="sexe" required>
+        </div>    
+        <label for="naissance">DATE DE NAISSANCE</label>
+        <input type="date" id="naissance" name="date_naissance">
+        <label for="lieu">LIEU DE NAISSANCE</label>
+        <input type="text" id="lieu" name="lieu_naissance">
+        <label for="natio">NATIONALITE</label>
+        <select id="nationalite" required>
+            <option 1 value="cameroun">CAMEROUN</option>
+            <option 2 value="ghana">GHANA</option>
+            <option 3 value="cote d'ivoire">COTE D'IVOIRE</option>
+            <option 4 value="angola">ANGOLA</option>
+            <option 5 value="congo">CONGO</option>
+            <option 6 value="tchad">TCHAD</option>
+            <option 7 value="togo">TOGO</option>
+            <option 8 value="benin">BENIN</option>
+            <option 9 value="nigeria">NIGERIA</option>
+            <option 10 value="gabon">GABON</option>
+     </select>
+     <label for="adresse email">ADRESSE EMAIL:</label>
+     <input type="email" id="adresse email" name="email"required>
+     <label form="mot de passe">MOT DE PASSE</label>
+     <input type="password" id="mot de passe" name="confirm password" required>
+     <label for="confirm">CONFIRMER MOT DE PASSEE</label>
+     <input type="password" id="confirm" name="confirmpassword" required>
+     <div class="btn-group">
+        <button type="submit">ENVOYER</button>
+        <button type="reset">ANNULER</button>
+     </div>
+    </form>
+</body>
+</html>
